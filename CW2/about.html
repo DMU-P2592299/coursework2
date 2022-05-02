@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--The above text makes the page mobile-friendly, making it accessible on both PCs and phones-->
+    <title>about</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <h1>The Time-Warp</h1>
+    <div class="container">
+      <div class="menu"><a href="homepage.html">Home</a></div>
+      <div class="menu"><a href="about.html">About</a></div>
+      <div class="menu"><a href="pastepisodes.html">Past Episodes</a></div>
+      <div class="menu"><a href="album.html">Marquee Albums</a></div>
+      <!--Including anchor points within the flexbox code means that the text below the title page can simultaneously work as a menu - it had to be adjusted to remove the naming from the original flexbox code as the anchor code already accomplishes that-->
+    </div>
+    <br><br>
+    <img src="image\presenter.JPG" alt="presenter" style="max-width: 100%"/>
+    <br>
+    <h4>Started in February 2022, The Time-Warp is an exciting audio experience that combines the best of live radio and podcasting to present listeners with an informative whirlwind nostalgia trip. Each episode looks at one specific year in music and explores the best songs and albums both critically and commercially and includes several recurring segments such as the Marquee Album, where I pick either the most important or my favourite album from the year and play 3 songs that showcase what sets it apart and makes it such an essential listen, as well as a segment where a song from the chosen year is linked to the output of an artist born in the year.</h4>
+    <br><br>
+    <h3>Studio Tour</h3>
+    <video id="tour" controls poster="image\thumbnail.jpg">
+  <source src="video\tour.mp4" type="video/mpeg"/>
+  <source src="video\tour.webm" type="video/webm"/>
+  <p id="Disclaimer"> Your browser does not support the video element.</p>
+</video>
+<br><br>
+<h3>Intro</h3>
+<audio controls=true>
+  <source src="audio\Intro.ogg" type='audio/ogg' />
+  <source src="audio\Intro.wav" type='audio/wav' />
+<p>Your browser does not support the audio element.</p>
+</audio>
+    <div id="footer"></div>
+  </body>
+</html>

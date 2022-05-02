@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--The above text makes the page mobile-friendly, making it accessible on both PCs and phones-->
+    <title>homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+<h1>The Time-Warp</h1> <img src="image\logo.jpg" alt="logo" height="100"/>
+<div class="container">
+  <div class="menu"><a href="homepage.html">Home</a></div>
+  <div class="menu"><a href="about.html">About</a></div>
+  <div class="menu"><a href="pastepisodes.html">Past Episodes</a></div>
+  <div class="menu"><a href="album.html">Marquee Albums</a></div>
+  <!--Including anchor points within the flexbox code means that the text below the title page can simultaneously work as a menu - it had to be adjusted to remove the naming from the original flexbox code as the anchor code already accomplishes that-->
+</div>
+<!--Line break to give space between menu bar and poster-->
+<br><br>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="image\space.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image\fingers.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image\presenter.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="image\desk.JPG" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+ <br><br>
+ <p><a href="https://www.demonfm.co.uk/">
+<img id="hyperlinklogo" src="image\logo.jpg" alt="demonfm.co.uk" width="100" height="132">
+</a></p>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+<div id="footer"></div>
+  </body>
+</html>
